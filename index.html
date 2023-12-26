@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SortingVisualiser</title>
+  <link rel="stylesheet" href="CSSfiles/styles.css">
+</head>
+
+<body>
+  <h1>SORTING VISUALISER</h1>
+
+  <div class="sorting">
+    <button  type="button" class = "newArray">New Array</button>
+    <button type="button" class="BubbleSort">Bubble Sorting</button>
+    <button type="button" class="InsertionSort">Insertion Sorting</button>
+    <button type="button" class="SelectionSort">Selection Sorting</button>
+    <button type="button" class="QuickSort">Quick Sorting</button>
+    <button type="button" Class="MergeSort">Merge Sorting</button>
+    <div class="inputs">
+      <span id="arrSize">Size of Array
+        <input type="range" class="arrSize" min="5" max="120" step="1" >
+      </span>
+
+      <span id="speed">Speed
+        <input type="range" class="speed" min="20" max="500" step="10" >
+      </span>
+    </div>
+  </div>
+
+
+
+  <div id="bars" class="flex-container"></div>
+
+
+  <p>This projects main aim is to understand how sorting algorithms works ,we show how swapping happens so according to our convineient we can adjust our speed and size of the array</p>
+    <script src="JS_files/merge.js" charset="utf-8"></script>
+    <script src="JS_files/bubblesort.js" charset="utf-8"></script>
+    <script src="JS_files/sort.js" charset="utf-8"></script>
+    <script src="JS_files/insertion.js" charset="utf-8"></script>
+    <script src="JS_files/quick.js" charset="utf-8"></script>
+    <script src="JS_files/selection.js" charset="utf-8"></script>
+
+
+</body>
+</html>
